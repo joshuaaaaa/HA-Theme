@@ -1,104 +1,122 @@
 # ─────────────────────────────────────────────────────────
 #  Icy Glass — Home Assistant Theme
-#  Glassmorphic / neumorphic light theme inspired by
-#  a frosted-glass dashboard UI
+#  Light glassmorphic theme — frosted glass UI
 # ─────────────────────────────────────────────────────────
 
 Icy Glass:
 
-  # ── Primary palette ──────────────────────────────────
-  primary-color: "#1e2a3a"
-  accent-color: "#2c3e50"
-  primary-background-color: "#e3e9f1"
-  secondary-background-color: "#edf1f7"
+  # ── Core palette ─────────────────────────────────────
+  #  Background: icy blue-gray matte
+  #  Cards: near-white
+  #  Accent: dark navy (monochromatic)
+  # ────────────────────────────────────────────────────
 
-  # ── Card styling (glassmorphism) ─────────────────────
-  card-background-color: "rgba(255, 255, 255, 0.55)"
-  ha-card-background: "rgba(255, 255, 255, 0.55)"
-  ha-card-border-radius: "18px"
-  ha-card-box-shadow: "0 8px 32px rgba(30, 42, 58, 0.07), 0 2px 8px rgba(30, 42, 58, 0.04)"
-  ha-card-border-width: "1px"
-  ha-card-border-color: "rgba(255, 255, 255, 0.45)"
+  primary-color: "#1c2b3a"
+  accent-color: "#1c2b3a"
+  primary-background-color: "#dfe6ef"
+  secondary-background-color: "#e5ebf2"
+
+  # ── Cards ────────────────────────────────────────────
+  card-background-color: "#f2f5f9"
+  ha-card-background: "#f2f5f9"
+  ha-card-border-radius: "16px"
+  ha-card-box-shadow: "0 2px 12px rgba(28, 43, 58, 0.06)"
+  ha-card-border-width: "0px"
+  ha-card-border-color: "transparent"
 
   # ── Text ─────────────────────────────────────────────
-  primary-text-color: "#1e2a3a"
-  secondary-text-color: "#6b7d8e"
+  primary-text-color: "#1c2b3a"
+  secondary-text-color: "#7b8b9d"
   text-primary-color: "#ffffff"
-  text-accent-color: "#1e2a3a"
-  disabled-text-color: "#a0adb8"
+  text-accent-color: "#1c2b3a"
+  disabled-text-color: "#a8b4c0"
+
+  # ── RGB variants (HA uses these for rgba calcs) ─────
+  rgb-primary-color: "28, 43, 58"
+  rgb-primary-text-color: "28, 43, 58"
+  rgb-secondary-text-color: "123, 139, 157"
+  rgb-card-background-color: "242, 245, 249"
 
   # ── Header / Toolbar ─────────────────────────────────
-  app-header-background-color: "rgba(227, 233, 241, 0.80)"
-  app-header-text-color: "#1e2a3a"
+  app-header-background-color: "#dfe6ef"
+  app-header-text-color: "#1c2b3a"
   app-header-border-bottom: "none"
 
   # ── Sidebar ──────────────────────────────────────────
-  sidebar-background-color: "rgba(227, 233, 241, 0.92)"
-  sidebar-icon-color: "#1e2a3a"
-  sidebar-text-color: "#1e2a3a"
-  sidebar-selected-background-color: "#1e2a3a"
+  sidebar-background-color: "#dfe6ef"
+  sidebar-icon-color: "#1c2b3a"
+  sidebar-text-color: "#1c2b3a"
+  sidebar-selected-background-color: "#1c2b3a"
   sidebar-selected-icon-color: "#ffffff"
   sidebar-selected-text-color: "#ffffff"
 
   # ── State icons ──────────────────────────────────────
-  state-icon-color: "#1e2a3a"
-  state-icon-active-color: "#1e2a3a"
-  state-icon-unavailable-color: "#a0adb8"
+  state-icon-color: "#1c2b3a"
+  state-icon-active-color: "#1c2b3a"
+  state-icon-unavailable-color: "#a8b4c0"
+  state-active-color: "#1c2b3a"
+  state-inactive-color: "#7b8b9d"
 
   # ── Switches & toggles ──────────────────────────────
-  switch-checked-color: "#1e2a3a"
+  switch-checked-color: "#1c2b3a"
   switch-checked-button-color: "#ffffff"
-  switch-checked-track-color: "#1e2a3a"
-  switch-unchecked-button-color: "#bcc8d3"
-  switch-unchecked-track-color: "#d3dbe4"
+  switch-checked-track-color: "#1c2b3a"
+  switch-unchecked-button-color: "#c5ced8"
+  switch-unchecked-track-color: "#d8dfe8"
 
   # ── Sliders ──────────────────────────────────────────
-  paper-slider-knob-color: "#1e2a3a"
-  paper-slider-active-color: "#1e2a3a"
-  paper-slider-container-color: "#d3dbe4"
-  paper-slider-secondary-color: "#8a9bac"
+  paper-slider-knob-color: "#1c2b3a"
+  paper-slider-active-color: "#1c2b3a"
+  paper-slider-container-color: "#d8dfe8"
+  paper-slider-secondary-color: "#8e9bab"
 
   # ── Toggle buttons ──────────────────────────────────
-  paper-toggle-button-checked-bar-color: "#1e2a3a"
-  paper-toggle-button-checked-button-color: "#1e2a3a"
-  paper-toggle-button-unchecked-bar-color: "#bcc8d3"
-  paper-toggle-button-unchecked-button-color: "#d3dbe4"
+  paper-toggle-button-checked-bar-color: "#1c2b3a"
+  paper-toggle-button-checked-button-color: "#1c2b3a"
+  paper-toggle-button-unchecked-bar-color: "#c5ced8"
+  paper-toggle-button-unchecked-button-color: "#d8dfe8"
 
   # ── Dialogs & popups ────────────────────────────────
-  paper-dialog-background-color: "rgba(237, 241, 247, 0.96)"
-  paper-dialog-button-color: "#1e2a3a"
+  paper-dialog-background-color: "#edf0f5"
+  paper-dialog-button-color: "#1c2b3a"
 
   # ── Inputs & forms ──────────────────────────────────
-  paper-input-container-color: "#6b7d8e"
-  paper-input-container-focus-color: "#1e2a3a"
-  input-fill-color: "rgba(255, 255, 255, 0.45)"
-  input-dropdown-icon-color: "#1e2a3a"
-  input-ink-color: "#1e2a3a"
-  input-label-ink-color: "#6b7d8e"
+  paper-input-container-color: "#7b8b9d"
+  paper-input-container-focus-color: "#1c2b3a"
+  input-fill-color: "#e8ecf2"
+  input-dropdown-icon-color: "#1c2b3a"
+  input-ink-color: "#1c2b3a"
+  input-label-ink-color: "#7b8b9d"
 
   # ── Tables ───────────────────────────────────────────
-  table-row-background-color: "rgba(255, 255, 255, 0.30)"
-  table-row-alternative-background-color: "rgba(255, 255, 255, 0.15)"
-  data-table-background-color: "rgba(255, 255, 255, 0.55)"
+  table-row-background-color: "#f2f5f9"
+  table-row-alternative-background-color: "#eaeff5"
+  data-table-background-color: "#f2f5f9"
 
   # ── Badges ───────────────────────────────────────────
-  label-badge-background-color: "rgba(255, 255, 255, 0.65)"
-  label-badge-text-color: "#1e2a3a"
+  label-badge-background-color: "#f2f5f9"
+  label-badge-text-color: "#1c2b3a"
   label-badge-red: "#e74c3c"
   label-badge-green: "#27ae60"
-  label-badge-blue: "#1e2a3a"
+  label-badge-blue: "#1c2b3a"
   label-badge-yellow: "#f39c12"
   label-badge-grey: "#95a5a6"
 
   # ── Dividers & borders ──────────────────────────────
-  divider-color: "rgba(30, 42, 58, 0.07)"
+  divider-color: "rgba(28, 43, 58, 0.06)"
 
   # ── Chips ────────────────────────────────────────────
-  ha-chip-background-color: "rgba(255, 255, 255, 0.50)"
-  ha-chip-text-color: "#1e2a3a"
+  ha-chip-background-color: "#e8ecf2"
+  ha-chip-text-color: "#1c2b3a"
+
+  # ── Error / Warning / Info / Success ────────────────
+  error-color: "#db4437"
+  warning-color: "#e8a230"
+  success-color: "#43a047"
+  info-color: "#1c2b3a"
 
   # ── Energy colors ────────────────────────────────────
-  energy-grid-consumption-color: "#1e2a3a"
+  energy-grid-consumption-color: "#1c2b3a"
   energy-grid-return-color: "#27ae60"
   energy-solar-color: "#f39c12"
   energy-battery-in-color: "#2980b9"
@@ -106,51 +124,47 @@ Icy Glass:
   energy-gas-color: "#e67e22"
 
   # ── Map ──────────────────────────────────────────────
-  map-filter: "brightness(1.05) saturate(0.6) hue-rotate(5deg)"
+  map-filter: "brightness(1.05) saturate(0.55)"
 
   # ── Code editor ──────────────────────────────────────
-  code-editor-background-color: "rgba(255, 255, 255, 0.55)"
-  codemirror-keyword: "#1e2a3a"
+  code-editor-background-color: "#f2f5f9"
+  codemirror-keyword: "#1c2b3a"
   codemirror-atom: "#2c3e50"
   codemirror-number: "#2980b9"
   codemirror-string: "#27ae60"
   codemirror-comment: "#95a5a6"
   codemirror-meta: "#8e44ad"
-  codemirror-property: "#1e2a3a"
+  codemirror-property: "#1c2b3a"
 
   # ── Markdown ─────────────────────────────────────────
-  markdown-code-background-color: "rgba(30, 42, 58, 0.06)"
+  markdown-code-background-color: "#e8ecf2"
 
   # ── Material Design tokens ──────────────────────────
-  mdc-theme-primary: "#1e2a3a"
-  mdc-theme-secondary: "#2c3e50"
-  mdc-theme-surface: "rgba(255, 255, 255, 0.55)"
-  mdc-theme-background: "#e3e9f1"
+  mdc-theme-primary: "#1c2b3a"
+  mdc-theme-secondary: "#1c2b3a"
+  mdc-theme-surface: "#f2f5f9"
+  mdc-theme-background: "#dfe6ef"
   mdc-theme-on-primary: "#ffffff"
   mdc-theme-on-secondary: "#ffffff"
-  mdc-theme-on-surface: "#1e2a3a"
+  mdc-theme-on-surface: "#1c2b3a"
 
-  # ── Ripple & interaction ─────────────────────────────
-  mdc-ripple-color: "#1e2a3a"
+  # ── Ripple ───────────────────────────────────────────
+  mdc-ripple-color: "#1c2b3a"
 
   # ── Buttons ──────────────────────────────────────────
-  mdc-button-raised-box-shadow: "0 4px 16px rgba(30, 42, 58, 0.10)"
-  mdc-button-outline-color: "rgba(30, 42, 58, 0.15)"
+  mdc-button-outline-color: "rgba(28, 43, 58, 0.12)"
 
-  # ── Scrollbar styling ───────────────────────────────
-  scrollbar-thumb-color: "rgba(30, 42, 58, 0.18)"
+  # ── Scrollbar ───────────────────────────────────────
+  scrollbar-thumb-color: "rgba(28, 43, 58, 0.15)"
 
-  # ── Lovelace background (subtle gradient) ───────────
-  lovelace-background: >-
-    linear-gradient(
-      135deg,
-      #dde3ec 0%,
-      #e6ebf2 35%,
-      #edf1f7 65%,
-      #e3e9f1 100%
-    )
+  # ── Lovelace background ─────────────────────────────
+  lovelace-background: "#dfe6ef"
 
-  # ── Card-mod global styles (glassmorphism) ──────────
+  # ──────────────────────────────────────────────────────
+  #  Card-mod styles (optional — requires card-mod HACS)
+  #  Adds glassmorphism backdrop-blur and soft edges
+  # ──────────────────────────────────────────────────────
+
   card-mod-theme: Icy Glass
 
   card-mod-root-yaml: |
@@ -160,53 +174,54 @@ Icy Glass:
         justify-content: center;
       }
       paper-tab {
-        color: #1e2a3a !important;
+        color: #1c2b3a !important;
         font-weight: 500;
       }
       paper-tab[aria-selected="true"] {
-        color: #1e2a3a !important;
+        color: #1c2b3a !important;
         font-weight: 700;
       }
     .: |
       .header {
-        backdrop-filter: blur(20px) saturate(1.2) !important;
-        -webkit-backdrop-filter: blur(20px) saturate(1.2) !important;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+        background: rgba(223, 230, 239, 0.85) !important;
+        backdrop-filter: blur(24px) saturate(1.2) !important;
+        -webkit-backdrop-filter: blur(24px) saturate(1.2) !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.35) !important;
       }
       .toolbar {
-        backdrop-filter: blur(20px) saturate(1.2) !important;
-        -webkit-backdrop-filter: blur(20px) saturate(1.2) !important;
+        background: transparent !important;
       }
 
   card-mod-card-yaml: |
     .: |
       ha-card {
-        backdrop-filter: blur(20px) saturate(1.3) !important;
-        -webkit-backdrop-filter: blur(20px) saturate(1.3) !important;
-        border: 1px solid rgba(255, 255, 255, 0.45) !important;
-        transition: box-shadow 0.3s ease, transform 0.2s ease !important;
+        background: rgba(242, 245, 249, 0.82) !important;
+        backdrop-filter: blur(24px) saturate(1.2) !important;
+        -webkit-backdrop-filter: blur(24px) saturate(1.2) !important;
+        border: 1px solid rgba(255, 255, 255, 0.5) !important;
+        transition: box-shadow 0.3s ease !important;
       }
       ha-card:hover {
-        box-shadow: 0 12px 40px rgba(30, 42, 58, 0.10),
-                    0 4px 12px rgba(30, 42, 58, 0.06) !important;
+        box-shadow: 0 4px 20px rgba(28, 43, 58, 0.09) !important;
       }
 
   card-mod-sidebar-yaml: |
     .: |
       :host {
-        backdrop-filter: blur(20px) saturate(1.2) !important;
-        -webkit-backdrop-filter: blur(20px) saturate(1.2) !important;
+        background: rgba(223, 230, 239, 0.9) !important;
+        backdrop-filter: blur(24px) saturate(1.2) !important;
+        -webkit-backdrop-filter: blur(24px) saturate(1.2) !important;
       }
       .menu .title {
         font-weight: 600 !important;
-        color: #1e2a3a !important;
+        color: #1c2b3a !important;
       }
       paper-icon-item {
         border-radius: 12px !important;
         margin: 2px 8px !important;
       }
       a[aria-selected="true"] paper-icon-item {
-        background-color: #1e2a3a !important;
+        background-color: #1c2b3a !important;
         border-radius: 12px !important;
       }
       a[aria-selected="true"] paper-icon-item ha-icon,
@@ -220,159 +235,5 @@ Icy Glass:
   card-mod-more-info-yaml: |
     .: |
       :host {
-        --ha-card-border-radius: 18px;
+        --ha-card-border-radius: 16px;
       }
-      .content {
-        backdrop-filter: blur(20px) saturate(1.3) !important;
-        -webkit-backdrop-filter: blur(20px) saturate(1.3) !important;
-      }
-
-  # ── Dark mode ────────────────────────────────────────
-  modes:
-    dark:
-      primary-color: "#8eafc8"
-      accent-color: "#8eafc8"
-      primary-background-color: "#0f1923"
-      secondary-background-color: "#162030"
-
-      card-background-color: "rgba(22, 32, 48, 0.65)"
-      ha-card-background: "rgba(22, 32, 48, 0.65)"
-      ha-card-box-shadow: "0 8px 32px rgba(0, 0, 0, 0.22), 0 2px 8px rgba(0, 0, 0, 0.12)"
-      ha-card-border-color: "rgba(142, 175, 200, 0.10)"
-
-      primary-text-color: "#d5e0ea"
-      secondary-text-color: "#7a8fa2"
-      text-primary-color: "#ffffff"
-      text-accent-color: "#8eafc8"
-      disabled-text-color: "#4a5a6c"
-
-      app-header-background-color: "rgba(15, 25, 35, 0.85)"
-      app-header-text-color: "#d5e0ea"
-
-      sidebar-background-color: "rgba(15, 25, 35, 0.95)"
-      sidebar-icon-color: "#8eafc8"
-      sidebar-text-color: "#d5e0ea"
-      sidebar-selected-background-color: "#8eafc8"
-      sidebar-selected-icon-color: "#0f1923"
-      sidebar-selected-text-color: "#0f1923"
-
-      state-icon-color: "#8eafc8"
-      state-icon-active-color: "#8eafc8"
-      state-icon-unavailable-color: "#4a5a6c"
-
-      switch-checked-color: "#8eafc8"
-      switch-checked-button-color: "#0f1923"
-      switch-checked-track-color: "#8eafc8"
-      switch-unchecked-button-color: "#3a4a5c"
-      switch-unchecked-track-color: "#2a3a4c"
-
-      paper-slider-knob-color: "#8eafc8"
-      paper-slider-active-color: "#8eafc8"
-      paper-slider-container-color: "#2a3a4c"
-
-      paper-dialog-background-color: "rgba(22, 32, 48, 0.96)"
-      paper-dialog-button-color: "#8eafc8"
-
-      input-fill-color: "rgba(22, 32, 48, 0.50)"
-      input-ink-color: "#d5e0ea"
-
-      table-row-background-color: "rgba(22, 32, 48, 0.50)"
-      table-row-alternative-background-color: "rgba(22, 32, 48, 0.30)"
-      data-table-background-color: "rgba(22, 32, 48, 0.65)"
-
-      label-badge-background-color: "rgba(22, 32, 48, 0.75)"
-      label-badge-text-color: "#d5e0ea"
-
-      divider-color: "rgba(142, 175, 200, 0.08)"
-
-      ha-chip-background-color: "rgba(22, 32, 48, 0.55)"
-      ha-chip-text-color: "#d5e0ea"
-
-      scrollbar-thumb-color: "rgba(142, 175, 200, 0.15)"
-
-      markdown-code-background-color: "rgba(142, 175, 200, 0.08)"
-
-      code-editor-background-color: "rgba(22, 32, 48, 0.65)"
-      codemirror-keyword: "#8eafc8"
-      codemirror-atom: "#a8c4d8"
-      codemirror-number: "#5dade2"
-      codemirror-string: "#58d68d"
-      codemirror-comment: "#4a5a6c"
-      codemirror-meta: "#bb8fce"
-      codemirror-property: "#8eafc8"
-
-      mdc-theme-primary: "#8eafc8"
-      mdc-theme-secondary: "#8eafc8"
-      mdc-theme-surface: "rgba(22, 32, 48, 0.65)"
-      mdc-theme-background: "#0f1923"
-      mdc-theme-on-primary: "#0f1923"
-      mdc-theme-on-secondary: "#0f1923"
-      mdc-theme-on-surface: "#d5e0ea"
-
-      mdc-ripple-color: "#8eafc8"
-
-      map-filter: "brightness(0.7) saturate(0.5) hue-rotate(5deg)"
-
-      lovelace-background: >-
-        linear-gradient(
-          135deg,
-          #0b1520 0%,
-          #0f1923 35%,
-          #132030 65%,
-          #0f1923 100%
-        )
-
-      card-mod-card-yaml: |
-        .: |
-          ha-card {
-            backdrop-filter: blur(20px) saturate(1.3) !important;
-            -webkit-backdrop-filter: blur(20px) saturate(1.3) !important;
-            border: 1px solid rgba(142, 175, 200, 0.10) !important;
-            transition: box-shadow 0.3s ease, transform 0.2s ease !important;
-          }
-          ha-card:hover {
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.28),
-                        0 4px 12px rgba(0, 0, 0, 0.15) !important;
-          }
-
-      card-mod-root-yaml: |
-        ha-tabs$: |
-          paper-tab {
-            color: #d5e0ea !important;
-          }
-          paper-tab[aria-selected="true"] {
-            color: #8eafc8 !important;
-            font-weight: 700;
-          }
-        .: |
-          .header {
-            backdrop-filter: blur(20px) saturate(1.2) !important;
-            -webkit-backdrop-filter: blur(20px) saturate(1.2) !important;
-            border-bottom: 1px solid rgba(142, 175, 200, 0.08) !important;
-          }
-
-      card-mod-sidebar-yaml: |
-        .: |
-          :host {
-            backdrop-filter: blur(20px) saturate(1.2) !important;
-            -webkit-backdrop-filter: blur(20px) saturate(1.2) !important;
-          }
-          .menu .title {
-            font-weight: 600 !important;
-            color: #d5e0ea !important;
-          }
-          paper-icon-item {
-            border-radius: 12px !important;
-            margin: 2px 8px !important;
-          }
-          a[aria-selected="true"] paper-icon-item {
-            background-color: #8eafc8 !important;
-            border-radius: 12px !important;
-          }
-          a[aria-selected="true"] paper-icon-item ha-icon,
-          a[aria-selected="true"] paper-icon-item ha-svg-icon {
-            color: #0f1923 !important;
-          }
-          a[aria-selected="true"] .item-text {
-            color: #0f1923 !important;
-          }
