@@ -6,20 +6,20 @@
 Icy Glass:
 
   # ── Core palette ─────────────────────────────────────
-  #  Background: very pale icy blue-gray
-  #  Cards: pure white
+  #  Background: icy blue-gray
+  #  Cards: frosted icy white (NOT pure white)
   #  Accent: dark navy (only for active/selected states)
-  #  Icons: muted gray (not dark)
+  #  Icons: medium gray-blue
   # ────────────────────────────────────────────────────
 
   primary-color: "#1e2d3d"
   accent-color: "#1e2d3d"
-  primary-background-color: "#edf2f7"
-  secondary-background-color: "#f0f4f8"
+  primary-background-color: "#e4ebf4"
+  secondary-background-color: "#e9eff6"
 
   # ── Cards ────────────────────────────────────────────
-  card-background-color: "#ffffff"
-  ha-card-background: "#ffffff"
+  card-background-color: "#eef3f8"
+  ha-card-background: "#eef3f8"
   ha-card-border-radius: "18px"
   ha-card-box-shadow: "0 2px 8px rgba(0, 0, 0, 0.03)"
   ha-card-border-width: "0px"
@@ -36,28 +36,28 @@ Icy Glass:
   rgb-primary-color: "30, 45, 61"
   rgb-primary-text-color: "30, 45, 61"
   rgb-secondary-text-color: "138, 150, 165"
-  rgb-card-background-color: "255, 255, 255"
+  rgb-card-background-color: "238, 243, 248"
 
   # ── Header / Toolbar ─────────────────────────────────
-  app-header-background-color: "#edf2f7"
+  app-header-background-color: "#e4ebf4"
   app-header-text-color: "#1e2d3d"
   app-header-border-bottom: "none"
 
   # ── Sidebar ──────────────────────────────────────────
-  #  Icons are muted gray; only the selected item is dark
-  sidebar-background-color: "#edf2f7"
-  sidebar-icon-color: "#97a3b0"
-  sidebar-text-color: "#97a3b0"
+  #  Icons are medium gray-blue; only the selected item is dark navy
+  sidebar-background-color: "#e4ebf4"
+  sidebar-icon-color: "#6e7d8c"
+  sidebar-text-color: "#6e7d8c"
   sidebar-selected-background-color: "#1e2d3d"
   sidebar-selected-icon-color: "#ffffff"
   sidebar-selected-text-color: "#ffffff"
 
   # ── State icons ──────────────────────────────────────
-  state-icon-color: "#97a3b0"
+  state-icon-color: "#6e7d8c"
   state-icon-active-color: "#1e2d3d"
   state-icon-unavailable-color: "#b0b9c4"
   state-active-color: "#1e2d3d"
-  state-inactive-color: "#97a3b0"
+  state-inactive-color: "#6e7d8c"
 
   # ── Switches & toggles ──────────────────────────────
   switch-checked-color: "#1e2d3d"
@@ -70,7 +70,7 @@ Icy Glass:
   paper-slider-knob-color: "#1e2d3d"
   paper-slider-active-color: "#1e2d3d"
   paper-slider-container-color: "#dfe4eb"
-  paper-slider-secondary-color: "#97a3b0"
+  paper-slider-secondary-color: "#6e7d8c"
 
   # ── Toggle buttons ──────────────────────────────────
   paper-toggle-button-checked-bar-color: "#1e2d3d"
@@ -83,26 +83,26 @@ Icy Glass:
   paper-dialog-button-color: "#1e2d3d"
 
   # ── Inputs & forms ──────────────────────────────────
-  paper-input-container-color: "#97a3b0"
+  paper-input-container-color: "#6e7d8c"
   paper-input-container-focus-color: "#1e2d3d"
   input-fill-color: "#f0f4f8"
   input-dropdown-icon-color: "#1e2d3d"
   input-ink-color: "#1e2d3d"
-  input-label-ink-color: "#97a3b0"
+  input-label-ink-color: "#6e7d8c"
 
   # ── Tables ───────────────────────────────────────────
-  table-row-background-color: "#ffffff"
-  table-row-alternative-background-color: "#f6f8fb"
-  data-table-background-color: "#ffffff"
+  table-row-background-color: "#eef3f8"
+  table-row-alternative-background-color: "#e9eff6"
+  data-table-background-color: "#eef3f8"
 
   # ── Badges ───────────────────────────────────────────
-  label-badge-background-color: "#ffffff"
+  label-badge-background-color: "#eef3f8"
   label-badge-text-color: "#1e2d3d"
   label-badge-red: "#e74c3c"
   label-badge-green: "#27ae60"
   label-badge-blue: "#1e2d3d"
   label-badge-yellow: "#f39c12"
-  label-badge-grey: "#97a3b0"
+  label-badge-grey: "#6e7d8c"
 
   # ── Dividers & borders ──────────────────────────────
   divider-color: "rgba(0, 0, 0, 0.04)"
@@ -129,12 +129,12 @@ Icy Glass:
   map-filter: "brightness(1.05) saturate(0.55)"
 
   # ── Code editor ──────────────────────────────────────
-  code-editor-background-color: "#ffffff"
+  code-editor-background-color: "#eef3f8"
   codemirror-keyword: "#1e2d3d"
   codemirror-atom: "#2c3e50"
   codemirror-number: "#2980b9"
   codemirror-string: "#27ae60"
-  codemirror-comment: "#97a3b0"
+  codemirror-comment: "#6e7d8c"
   codemirror-meta: "#8e44ad"
   codemirror-property: "#1e2d3d"
 
@@ -144,8 +144,8 @@ Icy Glass:
   # ── Material Design tokens ──────────────────────────
   mdc-theme-primary: "#1e2d3d"
   mdc-theme-secondary: "#1e2d3d"
-  mdc-theme-surface: "#ffffff"
-  mdc-theme-background: "#edf2f7"
+  mdc-theme-surface: "#eef3f8"
+  mdc-theme-background: "#e4ebf4"
   mdc-theme-on-primary: "#ffffff"
   mdc-theme-on-secondary: "#ffffff"
   mdc-theme-on-surface: "#1e2d3d"
@@ -160,7 +160,7 @@ Icy Glass:
   scrollbar-thumb-color: "rgba(0, 0, 0, 0.10)"
 
   # ── Lovelace background ─────────────────────────────
-  lovelace-background: "#edf2f7"
+  lovelace-background: "#e4ebf4"
 
   # ──────────────────────────────────────────────────────
   #  Card-mod styles (optional — requires card-mod HACS)
@@ -176,7 +176,7 @@ Icy Glass:
         justify-content: center;
       }
       paper-tab {
-        color: #97a3b0 !important;
+        color: #6e7d8c !important;
         font-weight: 500;
       }
       paper-tab[aria-selected="true"] {
@@ -185,7 +185,7 @@ Icy Glass:
       }
     .: |
       .header {
-        background: rgba(237, 242, 247, 0.88) !important;
+        background: rgba(228, 235, 244, 0.88) !important;
         backdrop-filter: blur(24px) saturate(1.2) !important;
         -webkit-backdrop-filter: blur(24px) saturate(1.2) !important;
         border-bottom: 1px solid rgba(255, 255, 255, 0.4) !important;
@@ -197,7 +197,7 @@ Icy Glass:
   card-mod-card-yaml: |
     .: |
       ha-card {
-        background: rgba(255, 255, 255, 0.85) !important;
+        background: rgba(238, 243, 248, 0.85) !important;
         backdrop-filter: blur(24px) saturate(1.2) !important;
         -webkit-backdrop-filter: blur(24px) saturate(1.2) !important;
         border: 1px solid rgba(255, 255, 255, 0.6) !important;
@@ -211,7 +211,7 @@ Icy Glass:
   card-mod-sidebar-yaml: |
     .: |
       :host {
-        background: rgba(237, 242, 247, 0.92) !important;
+        background: rgba(228, 235, 244, 0.92) !important;
         backdrop-filter: blur(24px) saturate(1.2) !important;
         -webkit-backdrop-filter: blur(24px) saturate(1.2) !important;
       }
@@ -225,10 +225,10 @@ Icy Glass:
       }
       paper-icon-item ha-icon,
       paper-icon-item ha-svg-icon {
-        color: #97a3b0 !important;
+        color: #6e7d8c !important;
       }
       .item-text {
-        color: #97a3b0 !important;
+        color: #6e7d8c !important;
       }
       a[aria-selected="true"] paper-icon-item {
         background-color: #1e2d3d !important;
