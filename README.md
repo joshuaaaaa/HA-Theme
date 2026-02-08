@@ -1,5 +1,7 @@
 # HA-Theme
+
 <img width="1352" height="449" alt="image" src="https://github.com/user-attachments/assets/4c1a5932-1f70-4078-9ac2-74b9a7187568" />
+
 🎨 **Custom Home Assistant Theme**  
 Clean, modern and readable theme for Home Assistant UI.
 
